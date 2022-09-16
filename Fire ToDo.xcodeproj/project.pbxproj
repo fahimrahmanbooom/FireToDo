@@ -19,6 +19,7 @@
 		FFDB5F7628B3C6CF0082E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDB5F7528B3C6CF0082E174 /* Assets.xcassets */; };
 		FFDB5F7928B3C6CF0082E174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDB5F7828B3C6CF0082E174 /* Preview Assets.xcassets */; };
 		FFDB5F8B28B3CD500082E174 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFDB5F8A28B3CD500082E174 /* GoogleService-Info.plist */; };
+		FFFD992028C780A900EDB574 /* SimpleAFLoader in Frameworks */ = {isa = PBXBuildFile; productRef = FFFD991F28C780A900EDB574 /* SimpleAFLoader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			files = (
 				FFAC63AA28C271B4006C5DDF /* SimpleAFLoader in Frameworks */,
 				FF83273628C4D60200DB77A2 /* FirebaseAuth in Frameworks */,
+				FFFD992028C780A900EDB574 /* SimpleAFLoader in Frameworks */,
 				FF83273828C4D60200DB77A2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +136,7 @@
 				FFAC63A928C271B4006C5DDF /* SimpleAFLoader */,
 				FF83273528C4D60200DB77A2 /* FirebaseAuth */,
 				FF83273728C4D60200DB77A2 /* FirebaseFirestore */,
+				FFFD991F28C780A900EDB574 /* SimpleAFLoader */,
 			);
 			productName = "Fire ToDo";
 			productReference = FFDB5F6E28B3C6CC0082E174 /* Fire ToDo.app */;
@@ -166,6 +169,7 @@
 			packageReferences = (
 				FFAC63A828C271B3006C5DDF /* XCRemoteSwiftPackageReference "SimpleAFLoader" */,
 				FF83273428C4D60200DB77A2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FFFD991E28C780A900EDB574 /* XCRemoteSwiftPackageReference "SimpleAFLoader" */,
 			);
 			productRefGroup = FFDB5F6F28B3C6CC0082E174 /* Products */;
 			projectDirPath = "";
@@ -424,6 +428,14 @@
 				kind = branch;
 			};
 		};
+		FFFD991E28C780A900EDB574 /* XCRemoteSwiftPackageReference "SimpleAFLoader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fahimrahmanbooom/SimpleAFLoader.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -438,6 +450,11 @@
 			productName = FirebaseFirestore;
 		};
 		FFAC63A928C271B4006C5DDF /* SimpleAFLoader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFAC63A828C271B3006C5DDF /* XCRemoteSwiftPackageReference "SimpleAFLoader" */;
+			productName = SimpleAFLoader;
+		};
+		FFFD991F28C780A900EDB574 /* SimpleAFLoader */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFAC63A828C271B3006C5DDF /* XCRemoteSwiftPackageReference "SimpleAFLoader" */;
 			productName = SimpleAFLoader;

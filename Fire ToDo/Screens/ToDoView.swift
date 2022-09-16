@@ -125,7 +125,7 @@ struct ToDoView: View {
     }
     
     // delete data by id
-    func deleteSingleDataFromFirestore(id: String, completion: @escaping (Bool) -> ()) {
+    private func deleteSingleDataFromFirestore(id: String, completion: @escaping (Bool) -> ()) {
         Firestore.firestore().collection(UserDefaults.standard.string(forKey: "firebaseUserID") ?? "").document(id).delete() { err in
             if let err = err {
                 print("Error removing document: \(err)")
